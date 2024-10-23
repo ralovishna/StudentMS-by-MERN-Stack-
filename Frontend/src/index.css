@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    @apply bg-white text-black;
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+    box-shadow: 0 0 0px 1000px white inset !important;
+  }
+}
+
+.custom-no-focus-border{
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+#drpdownInput::before{
+  content: "Select User";
+  position: absolute;
+  top: -30px;
+  left: 0;
+  font-size: 15px
+
+  ;
+}
